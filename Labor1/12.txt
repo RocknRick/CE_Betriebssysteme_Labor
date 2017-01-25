@@ -1,0 +1,1 @@
+[erik@erik-manjaro ~]$ touch file_1 file_2

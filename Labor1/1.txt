@@ -1,0 +1,5 @@
+erik@Acer-Manjaro ~ % touch new   
+erik@Acer-Manjaro ~ % cat > new
+Hallo Welt 
+erik@Acer-Manjaro ~ % cat new 
+Hallo Welt 

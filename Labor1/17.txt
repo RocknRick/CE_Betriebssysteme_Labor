@@ -1,0 +1,3 @@
+[erik@erik-manjaro A]$ rm file_4 
+[erik@erik-manjaro A]$ ls -li ./C/foo 
+49285465 lrwxrwxrwx 1 erik erik 19 23. Jan 19:10 ./C/foo -> /home/erik/A/file_4

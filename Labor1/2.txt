@@ -1,0 +1,2 @@
+erik@Acer-Manjaro ~ % cat new | cat | more                       
+Hall Welt

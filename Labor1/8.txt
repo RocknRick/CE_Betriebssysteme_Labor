@@ -1,0 +1,2 @@
+[erik@erik-manjaro test]$ date +"%d.%m.%y"
+23.01.17

@@ -1,0 +1,12 @@
+[erik@erik-manjaro ~]$ ln -s A/file_4 A/C/foo
+[erik@erik-manjaro ~]$ ls -i A/C/foo 
+49285465 A/C/foo
+[erik@erik-manjaro ~]$ ls -l A/C/foo 
+lrwxrwxrwx 1 erik erik 8 23. Jan 19:05 A/C/foo -> A/file_4
+
+
+[erik@erik-manjaro C]$ cp -s ~/A/file_4 foo
+[erik@erik-manjaro C]$ ls -i foo
+49285465 foo
+[erik@erik-manjaro C]$ ls -l foo
+lrwxrwxrwx 1 erik erik 19 23. Jan 19:10 foo -> /home/erik/A/file_4

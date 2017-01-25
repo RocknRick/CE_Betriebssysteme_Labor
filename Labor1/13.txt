@@ -1,0 +1,13 @@
+Methode 1)
+[erik@erik-manjaro ~]$ cp file_1 ./A && mv ./A/file_1 ./A/file_3
+[erik@erik-manjaro ~]$ ls A
+B  C  file_3
+[erik@erik-manjaro ~]$ ls file_1
+file_1
+
+Methode 2)
+[erik@erik-manjaro ~]$ cp file_1 A/file_3
+[erik@erik-manjaro ~]$ ls A
+B  C  file_3
+[erik@erik-manjaro ~]$ ls file_1
+file_1

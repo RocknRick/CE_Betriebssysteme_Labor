@@ -1,0 +1,3 @@
+[erik@erik-manjaro ~]$ mv A/file_3 A/file_4
+[erik@erik-manjaro ~]$ ls A
+B  C  file_4

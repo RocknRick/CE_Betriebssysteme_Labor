@@ -1,0 +1,2 @@
+[erik@erik-manjaro ~]$ touch "<-f>"
+[erik@erik-manjaro ~]$ who -a -p > '<-f>'

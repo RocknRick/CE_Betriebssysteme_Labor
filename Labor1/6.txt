@@ -1,0 +1,35 @@
+19:27:49 erik > PS1='\u@\H \s \v + \V on \d: ~ $ ' 
+erik@Acer-Manjaro bash 4.3 + 4.3.46 on Do Nov 10: ~ $ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

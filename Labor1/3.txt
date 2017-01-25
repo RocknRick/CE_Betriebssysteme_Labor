@@ -1,0 +1,38 @@
+erik@Acer-Manjaro ~ % cat -n -s ./.bashrc      
+1	#      
+2	# ~/.bashrc      
+3	#      
+4	      
+5	[[ $- != *i* ]] && return      
+6	      
+7	colors() {      
+8		local fgc bgc vals seq0      
+9	     
+10		printf "Color escapes are %s\n" '\e[${value};...;${value}m'     
+11		printf "Values 30..37 are \e[33mforeground colors\e[m\n"     
+12		printf "Values 40..47 are \e[43mbackground colors\e[m\n"     
+13		printf "Value  1 gives a  \e[1mbold-faced look\e[m\n\n"     
+14	     
+15		# foreground colors     
+16		for fgc in {30..37}; do     
+17			# background colors     
+18			for bgc in {40..47}; do     
+19				fgc=${fgc#37} # white     
+20				bgc=${bgc#40} # black     
+21	     
+22				vals="${fgc:+$fgc;}${bgc}"     
+23				vals=${vals%%;}     
+24	     
+25				seq0="${vals:+\e[${vals}m}"     
+26				printf "  %-9s" "${seq0:-(default)}"     
+27				printf " ${seq0}TEXT\e[m"     
+28				printf " \e[${vals:+${vals+$vals;}}1mBOLD\e[m"     
+29			done     
+30			echo; echo     
+31		done     
+32	}     
+33	     
+34	[[ -f ~/.extend.bashrc ]] && . ~/.extend.bashrc     
+35	     
+36	[ -r /usr/share/bash-completion/bash_completion   ] && . /usr/share/bash-completion/bash_completion     
+37	 

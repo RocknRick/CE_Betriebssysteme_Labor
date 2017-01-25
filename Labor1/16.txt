@@ -1,0 +1,4 @@
+[erik@erik-manjaro A]$ ls -i file_4 
+49285464 file_4
+[erik@erik-manjaro A]$ cp file_4 ~/file_4 && ls -i ~/file_4
+47192623 /home/erik/file_4
