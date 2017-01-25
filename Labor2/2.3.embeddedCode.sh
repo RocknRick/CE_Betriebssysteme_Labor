@@ -27,6 +27,12 @@ ps
 # Das Programm wird ueber seine PID mit kill beendet
 kill $(ps -C c_file -o pid=)
 echo "Programm läuft nicht"
-ps
+ps 
 
- 
+# Das Programm wird nochmal gestartet
+./c_file&
+kill -KILL %1 && echo "Programm beendet."
+
+# Das C-Programm wird geloescht
+rm ./c_file
+
