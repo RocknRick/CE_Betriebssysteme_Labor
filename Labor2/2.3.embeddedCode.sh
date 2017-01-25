@@ -12,8 +12,9 @@ gcc -o ./c_file -x c - << EOF
 #include <stdio.h>
 int main()
 {
-while(1);
-return 0;
+	printf("Embedded-Code Programm");
+	while(1);
+	return 0;
 }
 EOF
 
